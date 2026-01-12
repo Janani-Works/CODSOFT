@@ -1,0 +1,174 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* Header */
+.header {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 600;
+  color: #6366f1;
+}
+
+.nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #374151;
+  font-size: 14px;
+}
+
+.nav a:hover {
+  color: #6366f1;
+}
+
+/* Hero */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content {
+  color: white;
+  animation: fadeUp 1.2s ease;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 12px 32px;
+  border: none;
+  background: white;
+  color: #6366f1;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Features */
+.features {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h4 {
+  color: #6366f1;
+  margin-bottom: 10px;
+}
+
+/* About */
+.about {
+  padding: 60px 20px;
+  background: #eef2ff;
+  text-align: center;
+}
+
+.about h3 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 15px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  background: #111827;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Animations */
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .hero h2 {
+    font-size: 48px;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+    margin: auto;
+  }
+}
